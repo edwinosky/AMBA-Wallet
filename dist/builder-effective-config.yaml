@@ -1,0 +1,31 @@
+directories:
+  output: dist
+  buildResources: build
+appId: AMBA-DesktopWallet
+files:
+  - filter:
+      - modules/*
+      - assets/**/*
+      - renderer/*
+      - package.json
+      - main.js
+      - index.html
+win:
+  target: 7z
+  icon: build/icon.png
+  artifactName: 'Windows-${productName}-${version}.${ext}'
+  extraResources:
+    - bin/win/*
+linux:
+  target: tar.gz
+  icon: build/icon.icns
+  artifactName: 'Linux-${productName}-${version}.${ext}'
+  extraResources:
+    - bin/linux/*
+mac:
+  target: pkg
+  icon: build/icon.icns
+  artifactName: 'MacOS-${productName}-${version}.${ext}'
+  extraResources:
+    - bin/macos/*
+electronVersion: 3.1.1
