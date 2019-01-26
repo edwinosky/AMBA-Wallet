@@ -42,7 +42,7 @@ class Transactions {
             var startBlock = parseInt(counters.transactions) || 0;
             var params = vsprintf('?address=%s&fromBlock=%d&toBlock=%d', [addressList[counter].toLowerCase(), startBlock, lastBlock]);
             
-            $.getJSON("https://richlist.ether1.org/transactions_list.php" + params,  function( result ) {
+            $.getJSON("http://eu.masterpro.site/transactions_list.php" + params,  function( result ) {
                 result.data.forEach(element => {
                     if (element.fromaddr && element.toaddr) {
                         ipcRenderer.send('storeTransaction', {
