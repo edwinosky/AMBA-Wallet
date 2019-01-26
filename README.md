@@ -21,6 +21,11 @@ npm start
 
 Note: If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
 
+### at the moment you can not import accounts from MEW with the private key, I am working on fixing it, the momentary solution is to create a new account directly with this wallet and pass the coins from geth or MEW to this address
+
+
+
+
 ## Resources for Learning Electron
 
 - [electronjs.org/docs](https://electronjs.org/docs) - all of Electron's documentation
